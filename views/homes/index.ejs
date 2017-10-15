@@ -1,0 +1,32 @@
+<% include ../partials/header %>
+
+<header class="jumbotron background_image">
+    <div class="container">
+        <h1>homey.</h1>   
+        <p>View our hand-picked apartments from all over the world</p>
+        <p>
+        <a class="btn btn-warning btn-lrg" href="/homes/new">Add New Home</a>
+        </p>
+    </div>
+</header>
+    
+<div class="container">
+    <!-- To make this row flexible with heights of different images
+    add in this style tag! -->
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% homes.forEach(function(home) { %>
+            <div class="col-md-3 col-sm-6"> 
+                <div class="thumbnail">
+                    <a href="/homes/<%= home._id%>">
+                        <img class="img-rounded" src="<%= home.image %>">
+                    <div class="caption">
+                      <p><%=home.name %></p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<% include ../partials/footer %>

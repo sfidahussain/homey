@@ -1,0 +1,100 @@
+body {
+    background-color: #f4f6f8;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+    outline: transparent;
+    border: none;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+.delete-form {
+    display: inline;
+}
+
+.navbar {
+	outline: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+}
+
+nav li {
+    color: white;
+}
+
+.white {
+    color: #f4f6f8;
+}
+
+.background_image {
+	background-image: url("https://images.unsplash.com/photo-1506317708861-e31daf822eb7?dpr=1&auto=compress,format&fit=crop&w=2291&h=&q=80&cs=tinysrgb&crop=");
+	/* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+	padding-top: 10%;
+    padding-bottom: 10%;
+    color: white;
+}
+
+.form_up {
+    text-align: center;
+}
+
+.form_up h1{
+    padding-top: 10%;    
+}
+
+.form_up input {
+	background: transparent;
+	display: block;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid grey;
+    font-weight: 100;
+    padding: 2% 2% 1% 0%;
+    margin: 0 auto;
+}
+
+.form_up button {
+	display: inline-block;
+	margin: 0 auto;
+	background-color: transparent;
+    font-weight: 100;
+    color: grey;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+  	cursor: pointer;    
+}
+
+.form_up button:hover {
+	transition: all 0.3s;
+	background-color: grey;
+	color: white;
+}
+
+.button {
+	padding: 2%;
+}

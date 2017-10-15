@@ -1,0 +1,83 @@
+body {
+    background-color: #0000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+#landing-header h1 {
+  font-family: 'Nunito', sans-serif;
+}
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://images.unsplash.com/photo-1466098672325-c9ddda4b7975?dpr=1&auto=compress,format&fit=crop&w=2100&h=&q=80&cs=tinysrgb&crop=) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://images.unsplash.com/photo-1490122417551-6ee9691429d0?dpr=1&auto=compress,format&fit=crop&w=2100&h=&q=80&cs=tinysrgb&crop=);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://images.unsplash.com/photo-1500327698971-a5adcc454b37?dpr=1&auto=compress,format&fit=crop&w=2100&h=&q=80&cs=tinysrgb&crop=);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://images.unsplash.com/photo-1464890100898-a385f744067f?dpr=1&auto=compress,format&fit=crop&w=2100&h=&q=80&cs=tinysrgb&crop=);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://images.unsplash.com/photo-1465064154639-bc188708a175?dpr=1&auto=compress,format&fit=crop&w=2167&h=&q=80&cs=tinysrgb&crop=);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: .5;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: .5
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
