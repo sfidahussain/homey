@@ -1,10 +1,5 @@
-var express    = require("express"),
-    mongoose   = require("mongoose"),
-    app        = express();
+var mongoose   = require("mongoose");
     
-// Connect to db
-mongoose.connect("mongodb://localhost/yelp_camp_v12", {useMongoClient: true});
-
 // SCHEMA SETUP
 var commentSchema = new mongoose.Schema({
     text: String,

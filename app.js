@@ -15,8 +15,9 @@ var express        = require("express"),
 var commentRoutes    = require("./routes/comments"),
     authRoutes       = require("./routes/index"),
     homeRoutes = require("./routes/homes");
-    
-mongoose.connect("mongodb://localhost/yelp_camp_v12",{useMongoClient: true});
+//mongodb://sfidahussain:B2tm2n0786@ds121225.mlab.com:21225/homey    
+//mongoose.connect("mongodb://localhost/yelp_camp_v12",{useMongoClient: true});
+mongoose.connect("mongodb://sfidahussain:B2tm2n0786@ds121225.mlab.com:21225/homey",{useMongoClient: true});
 mongoose.Promise = global.Promise;
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
